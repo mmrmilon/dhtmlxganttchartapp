@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Critical Path Issue";
+}
+<div id="wbsBulkTaskSchedule">
+    <div class="row">
+        <div class="col-sm-6">
+            @Html.DropDownList("ProjectId", (List<SelectListItem>)ViewBag.Projects, "--Select Project--", new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="row mt-10">
+        <div class="col-md-12">
+            <div class="dhx-container">
+                <div class="dhx-row">
+                    <div class="col-12">
+                        <div class="gantt-livedemo-container">
+                            <div class="landing-view-demo shadow">
+                                <div class="demo-main-container">
+                                    <div class="gantt-demo-header">
+                                        <ul class="gantt-controls">
+                                            <li class="gantt-menu-item"><a data-id="collapseall" class="collapse-all" title="Collapse All Task"><img src="~/imgs/ic_collapse_all_24.png" />Collapse All</a></li>
+                                            <li class="gantt-menu-item"><a data-id="expandall" class="expand-all" title="Expand All Task"><img src="~/imgs/ic_expand_all_24.png">Expand All</a></li>
+                                            <li class="gantt-menu-item"><a data-id="day" class="day filter-by" title="View Daily Timeline"><i class="fa fa-calendar-check-o"></i>&nbsp;Day</a></li>
+                                            <li class="gantt-menu-item"><a data-id="week" class="week filter-by" title="View Weekly Timeline"><i class="fas fa-calendar-check-o"></i>&nbsp;Week</a></li>
+                                            <li class="gantt-menu-item"><a data-id="month" class="month filter-by" title="View Monthly Timeline"><i class="fa fa-calendar-check-o"></i>&nbsp;Month</a></li>
+                                            <li class="gantt-menu-item"><a data-id="year" class="year filter-by" title="View Yearly Timeline"><i class="fa fa-calendar-check-o"></i>&nbsp;Year</a></li>
+                                            <li class="gantt-menu-item gantt-menu-item-right"><a class="full-screen" data-action="fullscreen"><img src="~/imgs/ic_fullscreen_24.png">Full Screen</a></li>
+                                            <li class="gantt-menu-item gantt-menu-item-right">
+                                                <a><img src="~/imgs/ic_export_24.png">Export</a>
+                                                <ul class="gantt-controls">
+                                                    <li class="gantt-menu-item">
+                                                        <a data-id="toExcel" class="export-wbs"><img src="~/imgs/ic_file_24.png">Excel</a>
+                                                    </li>
+                                                    <li class="gantt-menu-item">
+                                                        <a data-id="toPDF" class="export-wbs-pdf"><img src="~/imgs/ic_file_24.png">PDF</a>
+                                                    </li>
+                                                    <li class="gantt-menu-item">
+                                                        <a data-id="toPNG" class="export-wbs-png"><img src="~/imgs/ic_file_24.png">PNG</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="gantt-menu-item gantt-menu-item-right display-none"><a data-id="timeline" class="grid-view" title="View Timeline Only"><i class="fas fa-history"></i>&nbsp;Timeline</a></li>
+                                            <li class="gantt-menu-item gantt-menu-item-right"><a data-id="timeline" class="timeline-view" title="View Timeline Only"><i class="fas fa-history"></i>&nbsp;Timeline</a></li>
+                                            <li class="gantt-menu-item gantt-menu-item-right gantt-menu-item-last"><a data-id="cpm" class="critical-path btn-danger" title="Critical Path"><img src="~/imgs/ic_critical_path_24.png">Critical Path</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="demo-main-content">
+                                        <div id="chart_div" style="height: 700px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <link href="~/dhtmlx/dhtmlxgantt.css?v=6.3.0" rel="stylesheet" />
+    <link href="~/dhtmlx/skins/dhtmlxgantt_terrace.css?v=6.3.0" rel="stylesheet" />
+    <script src="~/dhtmlx/dhtmlxgantt.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_tooltip.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_critical_path.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_grouping.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_multiselect.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_auto_scheduling.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_keyboard_navigation.js?v=6.3.0"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_fullscreen.js?v=6.3.0"></script>
+    <script src="https://export.dhtmlx.com/gantt/api.js"></script>
+
+    <script src="~/Content/pmo/js/wbs_bulk-task.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function () {
+            var project = @Html.Raw(Json.Encode(ViewBag.Project));
+            $.getJSON('dhtmlx/data/wbs-data.json', function (data) {
+                console.log(data);
+                WBS_BULK_TASK.init(data, project);
+            });
+        })();
+    </script>
+}

@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14F900EE-4E80-41E0-9DC1-0BC710C37660}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DhtmlxGanttChartApp</RootNamespace>
+    <AssemblyName>DhtmlxGanttChartApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\fontawesome-all.css" />
+    <Content Include="Content\fontawesome-all.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\LICENSE.txt" />
+    <Content Include="Content\pmo\css\custom.css" />
+    <Content Include="Content\pmo\js\wbs_bulk-task.js" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
+    <None Include="dhtmlx\data\wbs-data.json" />
+    <Content Include="dhtmlx\dhtmlxgantt.css" />
+    <Content Include="dhtmlx\dhtmlxgantt.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_auto_scheduling.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_click_drag.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_critical_path.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_csp.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_fullscreen.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_grouping.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_keyboard_navigation.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_marker.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_multiselect.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_overlay.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_quick_info.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_smart_rendering.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_tooltip.js" />
+    <Content Include="dhtmlx\ext\dhtmlxgantt_undo.js" />
+    <Content Include="dhtmlx\fit_task_text.js" />
+    <Content Include="dhtmlx\grid_struct.js" />
+    <Content Include="dhtmlx\layout.js" />
+    <Content Include="dhtmlx\locale\locale.js" />
+    <Content Include="dhtmlx\locale\locale_ar.js" />
+    <Content Include="dhtmlx\locale\locale_be.js" />
+    <Content Include="dhtmlx\locale\locale_ca.js" />
+    <Content Include="dhtmlx\locale\locale_cn.js" />
+    <Content Include="dhtmlx\locale\locale_cs.js" />
+    <Content Include="dhtmlx\locale\locale_da.js" />
+    <Content Include="dhtmlx\locale\locale_de.js" />
+    <Content Include="dhtmlx\locale\locale_el.js" />
+    <Content Include="dhtmlx\locale\locale_es.js" />
+    <Content Include="dhtmlx\locale\locale_fa.js" />
+    <Content Include="dhtmlx\locale\locale_fi.js" />
+    <Content Include="dhtmlx\locale\locale_fr.js" />
+    <Content Include="dhtmlx\locale\locale_he.js" />
+    <Content Include="dhtmlx\locale\locale_hr.js" />
+    <Content Include="dhtmlx\locale\locale_hu.js" />
+    <Content Include="dhtmlx\locale\locale_id.js" />
+    <Content Include="dhtmlx\locale\locale_it.js" />
+    <Content Include="dhtmlx\locale\locale_jp.js" />
+    <Content Include="dhtmlx\locale\locale_kr.js" />
+    <Content Include="dhtmlx\locale\locale_nb.js" />
+    <Content Include="dhtmlx\locale\locale_nl.js" />
+    <Content Include="dhtmlx\locale\locale_no.js" />
+    <Content Include="dhtmlx\locale\locale_pl.js" />
+    <Content Include="dhtmlx\locale\locale_pt.js" />
+    <Content Include="dhtmlx\locale\locale_ro.js" />
+    <Content Include="dhtmlx\locale\locale_ru.js" />
+    <Content Include="dhtmlx\locale\locale_si.js" />
+    <Content Include="dhtmlx\locale\locale_sk.js" />
+    <Content Include="dhtmlx\locale\locale_sv.js" />
+    <Content Include="dhtmlx\locale\locale_tr.js" />
+    <Content Include="dhtmlx\locale\locale_ua.js" />
+    <Content Include="dhtmlx\nav_menu.js" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_broadway.css" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_contrast_black.css" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_contrast_white.css" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_material.css" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_meadow.css" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_skyblue.css" />
+    <Content Include="dhtmlx\skins\dhtmlxgantt_terrace.css" />
+    <Content Include="dhtmlx\zoom.js" />
+    <Content Include="dhtmlx\zoom_to_fit.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GanttChart\backend\index.js" />
+    <Content Include="GanttChart\backend\item_initializer.js" />
+    <Content Include="GanttChart\backend\router.js" />
+    <Content Include="GanttChart\backend\router_dynamic_loading.js" />
+    <Content Include="GanttChart\backend\server.js" />
+    <Content Include="GanttChart\backend\storage.js" />
+    <Content Include="GanttChart\backend\storage_tree.js" />
+    <Content Include="GanttChart\codebase\dhtmlxgantt.css" />
+    <Content Include="GanttChart\codebase\dhtmlxgantt.js" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_broadway.css" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_contrast_black.css" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_contrast_white.css" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_material.css" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_meadow.css" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_skyblue.css" />
+    <Content Include="GanttChart\codebase\skins\dhtmlxgantt_terrace.css" />
+    <Content Include="GanttChart\codebase\sources\dhtmlxgantt.css" />
+    <Content Include="GanttChart\codebase\sources\dhtmlxgantt.js" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_broadway.css" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_contrast_black.css" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_contrast_white.css" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_material.css" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_meadow.css" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_skyblue.css" />
+    <Content Include="GanttChart\codebase\sources\skins\dhtmlxgantt_terrace.css" />
+    <Content Include="GanttChart\style.css" />
+    <Content Include="GanttChart\license.txt" />
+    <Content Include="GanttChart\readme.txt" />
+    <Content Include="GanttChart\samples\01_initialization\01_basic_init.html" />
+    <Content Include="GanttChart\samples\01_initialization\02_load_json.html" />
+    <Content Include="GanttChart\samples\01_initialization\03_load_xml.html" />
+    <Content Include="GanttChart\samples\01_initialization\04_save_rest.html" />
+    <Content Include="GanttChart\samples\01_initialization\06_touch_forced.html" />
+    <Content Include="GanttChart\samples\01_initialization\07_jquery.html" />
+    <Content Include="GanttChart\samples\01_initialization\08_explicit_time_range.html" />
+    <Content Include="GanttChart\samples\01_initialization\09_backward_compatibility.html" />
+    <Content Include="GanttChart\samples\01_initialization\10_fixed_size.html" />
+    <Content Include="GanttChart\samples\01_initialization\11_clickable_links.html" />
+    <Content Include="GanttChart\samples\01_initialization\12_localization.html" />
+    <Content Include="GanttChart\samples\01_initialization\13_project_duration.html" />
+    <Content Include="GanttChart\samples\01_initialization\14_reinitializtion.html" />
+    <Content Include="GanttChart\samples\01_initialization\15_connector_json_enddate.html" />
+    <Content Include="GanttChart\samples\01_initialization\16_projects_and_milestones.html" />
+    <Content Include="GanttChart\samples\01_initialization\17_bootstrap.html" />
+    <Content Include="GanttChart\samples\01_initialization\18_backward_planning.html" />
+    <Content Include="GanttChart\samples\01_initialization\19_tasks_without_dates.html" />
+    <Content Include="GanttChart\samples\01_initialization\20_tasks_outside_timescale.html" />
+    <Content Include="GanttChart\samples\01_initialization\index.html" />
+    <Content Include="GanttChart\samples\02_extensions\01_quickinfo.html" />
+    <Content Include="GanttChart\samples\02_extensions\02_tooltip.html" />
+    <Content Include="GanttChart\samples\02_extensions\03_critical_path.html" />
+    <Content Include="GanttChart\samples\02_extensions\04_grid_resize.html" />
+    <Content Include="GanttChart\samples\02_extensions\05_today_line.html" />
+    <Content Include="GanttChart\samples\02_extensions\06_dynamic_loading.html" />
+    <Content Include="GanttChart\samples\02_extensions\07_managing_grid_columns.html" />
+    <Content Include="GanttChart\samples\02_extensions\08_tasks_grouping.html" />
+    <Content Include="GanttChart\samples\02_extensions\09_multiselection.html" />
+    <Content Include="GanttChart\samples\02_extensions\10_tasks_grouping_multilevel.html" />
+    <Content Include="GanttChart\samples\02_extensions\11_full_screen.html" />
+    <Content Include="GanttChart\samples\02_extensions\12_auto_scheduling.html" />
+    <Content Include="GanttChart\samples\02_extensions\13_smart_rendering.html" />
+    <Content Include="GanttChart\samples\02_extensions\14_undo.html" />
+    <Content Include="GanttChart\samples\02_extensions\16_keyboard_navigation.html" />
+    <Content Include="GanttChart\samples\02_extensions\17_keyboard_navigation_cell.html" />
+    <Content Include="GanttChart\samples\02_extensions\18_linked_tasks.html" />
+    <Content Include="GanttChart\samples\02_extensions\19_constraints_scheduling.html" />
+    <Content Include="GanttChart\samples\02_extensions\20_backwards_scheduling.html" />
+    <Content Include="GanttChart\samples\02_extensions\21_overlay.html" />
+    <Content Include="GanttChart\samples\02_extensions\22_tooltip_api.html" />
+    <Content Include="GanttChart\samples\02_extensions\23_click_drag_splittask.html" />
+    <Content Include="GanttChart\samples\02_extensions\24_click_drag.html" />
+    <Content Include="GanttChart\samples\02_extensions\25_click_drag_select_by_drag.html" />
+    <Content Include="GanttChart\samples\02_extensions\26_full_screen_with_additional_elements.html" />
+    <Content Include="GanttChart\samples\02_extensions\27_drag_timeline.html" />
+    <Content Include="GanttChart\samples\02_extensions\data.js" />
+    <Content Include="GanttChart\samples\02_extensions\index.html" />
+    <Content Include="GanttChart\samples\03_scales\01_multiple_scales.html" />
+    <Content Include="GanttChart\samples\03_scales\02_month_days.html" />
+    <Content Include="GanttChart\samples\03_scales\03_full_year.html" />
+    <Content Include="GanttChart\samples\03_scales\04_days.html" />
+    <Content Include="GanttChart\samples\03_scales\05_dynamic_scales.html" />
+    <Content Include="GanttChart\samples\03_scales\06_custom_scales.html" />
+    <Content Include="GanttChart\samples\03_scales\07_minutes_scale.html" />
+    <Content Include="GanttChart\samples\03_scales\08_scale_autoconfig.html" />
+    <Content Include="GanttChart\samples\03_scales\09_skip_weekends.html" />
+    <Content Include="GanttChart\samples\03_scales\10_working_hours.html" />
+    <Content Include="GanttChart\samples\03_scales\11_select_column.html" />
+    <Content Include="GanttChart\samples\03_scales\12_year_quarters.html" />
+    <Content Include="GanttChart\samples\03_scales\13_zoom_to_fit.html" />
+    <Content Include="GanttChart\samples\03_scales\14_scale_zoom_by_wheelmouse.html" />
+    <Content Include="GanttChart\samples\03_scales\index.html" />
+    <Content Include="GanttChart\samples\04_customization\01_outer_content.html" />
+    <Content Include="GanttChart\samples\04_customization\02_custom_tree.html" />
+    <Content Include="GanttChart\samples\04_customization\03_link_styles.html" />
+    <Content Include="GanttChart\samples\04_customization\04_task_styles.html" />
+    <Content Include="GanttChart\samples\04_customization\05_tree_template.html" />
+    <Content Include="GanttChart\samples\04_customization\06_highlight_weekend.html" />
+    <Content Include="GanttChart\samples\04_customization\07_progress_text.html" />
+    <Content Include="GanttChart\samples\04_customization\08_templates.html" />
+    <Content Include="GanttChart\samples\04_customization\09_html_content.html" />
+    <Content Include="GanttChart\samples\04_customization\10_context_menu.html" />
+    <Content Include="GanttChart\samples\04_customization\11_split_task.html" />
+    <Content Include="GanttChart\samples\04_customization\12_custom_task_type.html" />
+    <Content Include="GanttChart\samples\04_customization\13_autosize_container.html" />
+    <Content Include="GanttChart\samples\04_customization\14_deadline.html" />
+    <Content Include="GanttChart\samples\04_customization\15_baselines.html" />
+    <Content Include="GanttChart\samples\04_customization\16_inline_task_colors.html" />
+    <Content Include="GanttChart\samples\04_customization\17_classic_gantt_look.html" />
+    <Content Include="GanttChart\samples\04_customization\18_subtasks_displaying.html" />
+    <Content Include="GanttChart\samples\04_customization\19_task_type.html" />
+    <Content Include="GanttChart\samples\04_customization\20_message_types.html" />
+    <Content Include="GanttChart\samples\04_customization\21_open_split_task.html" />
+    <Content Include="GanttChart\samples\04_customization\common\deadline_icon.png" />
+    <Content Include="GanttChart\samples\04_customization\index.html" />
+    <Content Include="GanttChart\samples\05_lightbox\01_lightbox_customization.html" />
+    <Content Include="GanttChart\samples\05_lightbox\02_checkbox.html" />
+    <Content Include="GanttChart\samples\05_lightbox\02_progress_lightbox.html" />
+    <Content Include="GanttChart\samples\05_lightbox\02_radio.html" />
+    <Content Include="GanttChart\samples\05_lightbox\03_validation.html" />
+    <Content Include="GanttChart\samples\05_lightbox\04_custom_editor.html" />
+    <Content Include="GanttChart\samples\05_lightbox\05_template.html" />
+    <Content Include="GanttChart\samples\05_lightbox\06_custom_button.html" />
+    <Content Include="GanttChart\samples\05_lightbox\07_time.html" />
+    <Content Include="GanttChart\samples\05_lightbox\08_parent_selector.html" />
+    <Content Include="GanttChart\samples\05_lightbox\09_years_selector_range.html" />
+    <Content Include="GanttChart\samples\05_lightbox\10_progress_slider.html" />
+    <Content Include="GanttChart\samples\05_lightbox\11_datepicker_for_lightbox.html" />
+    <Content Include="GanttChart\samples\05_lightbox\12_select.html" />
+    <Content Include="GanttChart\samples\05_lightbox\13_resources.html" />
+    <Content Include="GanttChart\samples\05_lightbox\14_jquery_multiselect.html" />
+    <Content Include="GanttChart\samples\05_lightbox\common\v_complete.png" />
+    <Content Include="GanttChart\samples\05_lightbox\index.html" />
+    <Content Include="GanttChart\samples\06_skins\01_default.html" />
+    <Content Include="GanttChart\samples\06_skins\02_default_lightbox.html" />
+    <Content Include="GanttChart\samples\06_skins\03_skyblue.html" />
+    <Content Include="GanttChart\samples\06_skins\04_meadow.html" />
+    <Content Include="GanttChart\samples\06_skins\05_broadway.html" />
+    <Content Include="GanttChart\samples\06_skins\06_dynamic_skin.html" />
+    <Content Include="GanttChart\samples\06_skins\07_high_contrast_black.html" />
+    <Content Include="GanttChart\samples\06_skins\08_high_contrast_white.html" />
+    <Content Include="GanttChart\samples\06_skins\09_material.html" />
+    <Content Include="GanttChart\samples\06_skins\index.html" />
+    <Content Include="GanttChart\samples\07_grid\01_builtin_sorting.html" />
+    <Content Include="GanttChart\samples\07_grid\02_branch_ordering.html" />
+    <Content Include="GanttChart\samples\07_grid\03_filtering.html" />
+    <Content Include="GanttChart\samples\07_grid\04_custom_sorting.html" />
+    <Content Include="GanttChart\samples\07_grid\05_sort_api.html" />
+    <Content Include="GanttChart\samples\07_grid\06_without_grid.html" />
+    <Content Include="GanttChart\samples\07_grid\07_custom_buttons.html" />
+    <Content Include="GanttChart\samples\07_grid\08_drag_between_levels.html" />
+    <Content Include="GanttChart\samples\07_grid\09_wbs_column.html" />
+    <Content Include="GanttChart\samples\07_grid\10_scrollable_grid.html" />
+    <Content Include="GanttChart\samples\07_grid\11_inline_edit_basic.html" />
+    <Content Include="GanttChart\samples\07_grid\12_inline_edit_key_nav.html" />
+    <Content Include="GanttChart\samples\07_grid\13_custom_mapping.html" />
+    <Content Include="GanttChart\samples\07_grid\14_branch_ordering_highlight.html" />
+    <Content Include="GanttChart\samples\07_grid\index.html" />
+    <Content Include="GanttChart\samples\08_api\01_dnd_events.html" />
+    <Content Include="GanttChart\samples\08_api\02_constraints.html" />
+    <Content Include="GanttChart\samples\08_api\03_validation.html" />
+    <Content Include="GanttChart\samples\08_api\04_limit_project.html" />
+    <Content Include="GanttChart\samples\08_api\05_limit_drag_dates.html" />
+    <Content Include="GanttChart\samples\08_api\06_export.html" />
+    <Content Include="GanttChart\samples\08_api\07_export_styles.html" />
+    <Content Include="GanttChart\samples\08_api\08_export_other.html" />
+    <Content Include="GanttChart\samples\08_api\09_export_store.html" />
+    <Content Include="GanttChart\samples\08_api\10_performance_tweaks.html" />
+    <Content Include="GanttChart\samples\08_api\11_project_structure.html" />
+    <Content Include="GanttChart\samples\08_api\12_fit_task_text.html" />
+    <Content Include="GanttChart\samples\08_api\13_highlight_drag_position.html" />
+    <Content Include="GanttChart\samples\08_api\14_critical_tasks_expanding.html" />
+    <Content Include="GanttChart\samples\08_api\15_show_dates_on_drag.html" />
+    <Content Include="GanttChart\samples\08_api\16_dynamic_progress.html" />
+    <Content Include="GanttChart\samples\08_api\17_show_task_slack.html" />
+    <Content Include="GanttChart\samples\08_api\18_load_from_mpp.html" />
+    <Content Include="GanttChart\samples\08_api\18_load_from_primaverap6.html" />
+    <Content Include="GanttChart\samples\08_api\19_draggable_projects.html" />
+    <Content Include="GanttChart\samples\08_api\21_load_from_excel.html" />
+    <Content Include="GanttChart\samples\08_api\22_data_processor.html" />
+    <Content Include="GanttChart\samples\08_api\common\excel.png" />
+    <Content Include="GanttChart\samples\08_api\common\ms-project.png" />
+    <Content Include="GanttChart\samples\08_api\index.html" />
+    <Content Include="GanttChart\samples\09_worktime\01_working_hours_per_day.html" />
+    <Content Include="GanttChart\samples\09_worktime\02_working_days.html" />
+    <Content Include="GanttChart\samples\09_worktime\03_exclude_holidays.html" />
+    <Content Include="GanttChart\samples\09_worktime\04_custom_workday_duration.html" />
+    <Content Include="GanttChart\samples\09_worktime\05_adjust_to_worktime.html" />
+    <Content Include="GanttChart\samples\09_worktime\06_task_calendars.html" />
+    <Content Include="GanttChart\samples\09_worktime\07_resource_calendars.html" />
+    <Content Include="GanttChart\samples\09_worktime\08_project_calendars.html" />
+    <Content Include="GanttChart\samples\09_worktime\09_decimal_durations.html" />
+    <Content Include="GanttChart\samples\09_worktime\10_merge_calendars.html" />
+    <Content Include="GanttChart\samples\09_worktime\11_working_hours_with_minutes.html" />
+    <Content Include="GanttChart\samples\09_worktime\index.html" />
+    <Content Include="GanttChart\samples\10_layout\01_rightside_columns.html" />
+    <Content Include="GanttChart\samples\10_layout\02_resource_panel.html" />
+    <Content Include="GanttChart\samples\10_layout\03_scale_at_bottom.html" />
+    <Content Include="GanttChart\samples\10_layout\04_rtl.html" />
+    <Content Include="GanttChart\samples\10_layout\data.js" />
+    <Content Include="GanttChart\samples\10_layout\index.html" />
+    <Content Include="GanttChart\samples\11_resources\01_assigning_resources.html" />
+    <Content Include="GanttChart\samples\11_resources\02_resource_calendars.html" />
+    <Content Include="GanttChart\samples\11_resources\03_break_down_by_resource.html" />
+    <Content Include="GanttChart\samples\11_resources\04_resource_usage_diagram.html" />
+    <Content Include="GanttChart\samples\11_resources\05_resource_usage_templates.html" />
+    <Content Include="GanttChart\samples\11_resources\06_assign_multiple_owners.html" />
+    <Content Include="GanttChart\samples\11_resources\07_assign_multiple_resources.html" />
+    <Content Include="GanttChart\samples\11_resources\08_resource_usage_groups.html" />
+    <Content Include="GanttChart\samples\11_resources\09_resource_histogram.html" />
+    <Content Include="GanttChart\samples\11_resources\10_resource_histogram_workload_percents.html" />
+    <Content Include="GanttChart\samples\11_resources\11_resource_histogram_display_tasks.html" />
+    <Content Include="GanttChart\samples\11_resources\12_work_and_material_resources.html" />
+    <Content Include="GanttChart\samples\11_resources\common\jquery_multiselect.css" />
+    <Content Include="GanttChart\samples\11_resources\common\jquery_multiselect.js" />
+    <Content Include="GanttChart\samples\11_resources\common\resource_filter.js" />
+    <Content Include="GanttChart\samples\11_resources\index.html" />
+    <Content Include="GanttChart\samples\20_multiple\01_basic.html" />
+    <Content Include="GanttChart\samples\20_multiple\03_layout.html" />
+    <Content Include="GanttChart\samples\20_multiple\05_jquery.html" />
+    <Content Include="GanttChart\samples\20_multiple\06_export.html" />
+    <Content Include="GanttChart\samples\20_multiple\07_keyboard_navigation.html" />
+    <Content Include="GanttChart\samples\20_multiple\08_constructor_destructor.html" />
+    <Content Include="GanttChart\samples\20_multiple\index.html" />
+    <Content Include="GanttChart\samples\common\constraint-arrow.svg" />
+    <Content Include="GanttChart\samples\common\controls_styles.css" />
+    <Content Include="GanttChart\samples\common\customstyles.css" />
+    <Content Include="GanttChart\samples\common\data.js" />
+    <Content Include="GanttChart\samples\common\data.xml" />
+    <Content Include="GanttChart\samples\common\data_baselines.js" />
+    <Content Include="GanttChart\samples\common\data_end_dates.js" />
+    <Content Include="GanttChart\samples\common\data_extra.js" />
+    <Content Include="GanttChart\samples\common\data_large.js" />
+    <Content Include="GanttChart\samples\common\dhxmenu.xml" />
+    <Content Include="GanttChart\samples\common\docs.css" />
+    <Content Include="GanttChart\samples\common\dump.sql" />
+    <Content Include="GanttChart\samples\common\olddata.xml" />
+    <Content Include="GanttChart\samples\common\resource_construction_materials.js" />
+    <Content Include="GanttChart\samples\common\resource_project_assignments.js" />
+    <Content Include="GanttChart\samples\common\resource_project_assignments_percents.js" />
+    <Content Include="GanttChart\samples\common\resource_project_construction.js" />
+    <Content Include="GanttChart\samples\common\resource_project_multiple_owners.js" />
+    <Content Include="GanttChart\samples\common\resource_project_single_resource.js" />
+    <Content Include="GanttChart\samples\common\resource_project_single_resource_diagram.js" />
+    <Content Include="GanttChart\samples\common\sample_images\about.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\about_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\bug_reporting.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\bug_reporting_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\close.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\close_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\copy.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\copy_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\cut.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\cut_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\help.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\help_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\new.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\new_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\open.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\open_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\page_setup.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\page_setup_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\paste.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\paste_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\print.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\print_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\redo.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\redo_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\save.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\save_as.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\save_as_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\save_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\select_all.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\select_all_dis.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\undo.gif" />
+    <Content Include="GanttChart\samples\common\sample_images\undo_dis.gif" />
+    <Content Include="GanttChart\samples\common\snippets\dhx_file_dnd.css" />
+    <Content Include="GanttChart\samples\common\snippets\dhx_file_dnd.js" />
+    <Content Include="GanttChart\samples\common\snippets\multiselect.js" />
+    <Content Include="GanttChart\samples\common\testdata.js" />
+    <Content Include="GanttChart\samples\index.html" />
+    <Content Include="GanttChart\samples\readme.txt" />
+    <Content Include="GanttChart\whatsnew.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="imgs\ic_auto_scheduling_24.png" />
+    <Content Include="imgs\ic_collapse_all_24.png" />
+    <Content Include="imgs\ic_critical_path_24.png" />
+    <Content Include="imgs\ic_expand_all_24.png" />
+    <Content Include="imgs\ic_export_24.png" />
+    <Content Include="imgs\ic_file_24.png" />
+    <Content Include="imgs\ic_fullscreen_24.png" />
+    <Content Include="imgs\ic_redo_24.png" />
+    <Content Include="imgs\ic_undo_24.png" />
+    <Content Include="imgs\ic_zoom_in.png" />
+    <Content Include="imgs\ic_zoom_out.png" />
+    <Content Include="imgs\ic_zoom_to_fit_24.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="GanttChart\backend\data-dynamic.json" />
+    <Content Include="GanttChart\backend\data.json" />
+    <Content Include="GanttChart\backend\package.json" />
+    <Content Include="GanttChart\codebase\dhtmlxgantt.js.map" />
+    <Content Include="GanttChart\package.json" />
+    <Content Include="GanttChart\samples\02_extensions\data.json" />
+    <Content Include="GanttChart\samples\10_layout\data.json" />
+    <Content Include="GanttChart\samples\common\data.json" />
+    <Content Include="GanttChart\samples\common\data_start_end_dates.json" />
+    <Content Include="GanttChart\samples\common\DemoProject.mpp" />
+    <Content Include="GanttChart\samples\common\DemoProject.xlsx" />
+    <Content Include="GanttChart\samples\common\loaddata.json" />
+    <Content Include="GanttChart\samples\common\PROJECT.xer" />
+    <Content Include="libman.json" />
+    <Content Include="dhtmlx\data\data.json" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\fontawesome\all.js" />
+    <Content Include="Scripts\fontawesome\all.min.js" />
+    <Content Include="Scripts\fontawesome\brands.js" />
+    <Content Include="Scripts\fontawesome\brands.min.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\fontawesome\regular.js" />
+    <Content Include="Scripts\fontawesome\regular.min.js" />
+    <Content Include="Scripts\fontawesome\solid.js" />
+    <Content Include="Scripts\fontawesome\solid.min.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="Views\Home\CriticalPath.cshtml" />
+    <Content Include="Views\Shared\_Layout_Critical_Path.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="dhtmlx\NewFolder1\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="dhtmlx\dhtmlxgantt.d.ts" />
+    <TypeScriptCompile Include="GanttChart\codebase\dhtmlxgantt.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53898</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53898/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

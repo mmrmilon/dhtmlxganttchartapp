@@ -1,0 +1,327 @@
+﻿{
+  "data": [
+    {
+      "id": 3101861,
+      "start_date": "2019-09-07 04:06:15",
+      "text": "Construction plans",
+      "note": null,
+      "type": "project",
+      "progress": 0,
+      "duration": 5029,
+      "parent": 0,
+      "sortorder": 0,
+      "open": 1
+    },
+    {
+      "id": 3101859,
+      "start_date": "2019-09-07 04:06:15",
+      "text": "Johnson's house",
+      "note": "",
+      "type": "project",
+      "progress": 0.299714,
+      "duration": 3661,
+      "parent": 3101861,
+      "sortorder": 1,
+      "open": 1
+    },
+    {
+      "id": 3101862,
+      "start_date": "2019-09-07 04:06:15",
+      "text": "Contract",
+      "note": null,
+      "type": "project",
+      "progress": 1,
+      "duration": 697,
+      "parent": 3101859,
+      "sortorder": 2,
+      "open": 1
+    },
+    {
+      "id": 3101860,
+      "start_date": "2019-09-07 00:00:00",
+      "text": "Supply construction agreement",
+      "note": "",
+      "type": "task",
+      "progress": 1,
+      "duration": 360,
+      "parent": 3101862,
+      "sortorder": 3,
+      "open": 1
+    },
+    {
+      "id": 3101866,
+      "start_date": "2019-09-22 00:00:00",
+      "text": "Estimation construction costs",
+      "note": "",
+      "type": "task",
+      "progress": 1,
+      "duration": 264,
+      "parent": 3101862,
+      "sortorder": 4,
+      "open": 1
+    },
+    {
+      "id": 3101863,
+      "start_date": "2019-10-03 00:00:00",
+      "text": "Sign contract",
+      "note": "",
+      "type": "task",
+      "progress": 1,
+      "duration": 96,
+      "parent": 3101862,
+      "sortorder": 5,
+      "open": 1
+    },
+    {
+      "id": 3101865,
+      "start_date": "2019-10-04 00:00:00",
+      "text": "Design",
+      "note": "",
+      "type": "project",
+      "progress": 0.5,
+      "duration": 720,
+      "parent": 3101859,
+      "sortorder": 7,
+      "open": 1
+    },
+    {
+      "id": 3101868,
+      "start_date": "2019-10-04 00:00:00",
+      "text": "Outline design",
+      "note": "",
+      "type": "task",
+      "progress": 1,
+      "duration": 384,
+      "parent": 3101865,
+      "sortorder": 8,
+      "open": 1
+    },
+    {
+      "id": 3101869,
+      "start_date": "2019-10-20 00:00:00",
+      "text": "Scheme design",
+      "note": "",
+      "type": "task",
+      "progress": 0.649468,
+      "duration": 384,
+      "parent": 3101865,
+      "sortorder": 9,
+      "open": 1
+    },
+    {
+      "id": 3101871,
+      "start_date": "2019-11-05 00:00:00",
+      "text": "Obtain permits",
+      "note": "",
+      "type": "task",
+      "progress": 0.365455,
+      "duration": 240,
+      "parent": 3101859,
+      "sortorder": 11,
+      "open": 1
+    },
+    {
+      "id": 3101864,
+      "start_date": "2019-11-22 00:00:00",
+      "text": "Secure financing",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 120,
+      "parent": 3101859,
+      "sortorder": 12,
+      "open": 1
+    },
+    {
+      "id": 3101867,
+      "start_date": "2019-11-15 00:00:00",
+      "text": "Site works",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 480,
+      "parent": 3101859,
+      "sortorder": 13,
+      "open": 1
+    },
+    {
+      "id": 3101870,
+      "start_date": "2019-12-05 00:00:00",
+      "text": "Foundation",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 624,
+      "parent": 3101859,
+      "sortorder": 14,
+      "open": 1
+    },
+    {
+      "id": 3101874,
+      "start_date": "2019-12-31 00:00:00",
+      "text": "Roof",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 312,
+      "parent": 3101859,
+      "sortorder": 15,
+      "open": 1
+    },
+    {
+      "id": 3101872,
+      "start_date": "2020-01-13 00:00:00",
+      "text": "Inspection",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 720,
+      "parent": 3101859,
+      "sortorder": 16,
+      "open": 1
+    },
+    {
+      "id": 3101875,
+      "start_date": "2020-02-12 00:00:00",
+      "text": "Move in",
+      "note": null,
+      "type": "milestone",
+      "progress": 0,
+      "parent": 3101859,
+      "sortorder": 17,
+      "open": 1
+    },
+    {
+      "id": 3101873,
+      "start_date": "2020-02-12 14:06:15",
+      "text": "Joplin's House",
+      "note": null,
+      "type": "project",
+      "progress": 0,
+      "duration": 1385,
+      "parent": 3101861,
+      "sortorder": 19,
+      "open": 1
+    },
+    {
+      "id": 3101876,
+      "start_date": "2020-02-12 14:06:15",
+      "text": "Tender",
+      "note": null,
+      "type": "project",
+      "progress": 0,
+      "duration": 481,
+      "parent": 3101873,
+      "sortorder": 20,
+      "open": 1
+    },
+    {
+      "id": 3101877,
+      "start_date": "2020-02-12 00:00:00",
+      "text": "Issue tender documentation",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 264,
+      "parent": 3101876,
+      "sortorder": 21,
+      "open": 1
+    },
+    {
+      "id": 3101879,
+      "start_date": "2020-02-23 00:00:00",
+      "text": "Tender interviews",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 240,
+      "parent": 3101876,
+      "sortorder": 22,
+      "open": 1
+    },
+    {
+      "id": 3101878,
+      "start_date": "2020-03-05 00:00:00",
+      "text": "Contract",
+      "note": "",
+      "type": "task",
+      "progress": 0,
+      "duration": 905,
+      "parent": 3101873,
+      "sortorder": 24,
+      "open": 1
+    }
+  ],
+  "links": [
+    {
+      "id": 1162208,
+      "source": 3101868,
+      "target": 3101869,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162209,
+      "source": 3101871,
+      "target": 3101867,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162210,
+      "source": 3101867,
+      "target": 3101870,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162211,
+      "source": 3101866,
+      "target": 3101863,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162212,
+      "source": 3101870,
+      "target": 3101874,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162213,
+      "source": 3101872,
+      "target": 3101875,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162214,
+      "source": 3101877,
+      "target": 3101879,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162215,
+      "source": 3101879,
+      "target": 3101878,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162216,
+      "source": 3101869,
+      "target": 3101871,
+      "type": "0",
+      "lag": 0
+    },
+    {
+      "id": 1162217,
+      "source": 3101874,
+      "target": 3101872,
+      "type": "0",
+      "lag": 0
+    }
+  ]
+}
