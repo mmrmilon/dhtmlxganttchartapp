@@ -141,6 +141,7 @@
     <Content Include="Content\fontawesome.min.css" />
     <Content Include="Content\LICENSE.txt" />
     <Content Include="Content\pmo\css\custom.css" />
+    <Content Include="Content\pmo\js\wbs-sample-one.js" />
     <Content Include="Content\pmo\js\wbs_bulk-task.js" />
     <Content Include="Content\regular.css" />
     <Content Include="Content\regular.min.css" />
@@ -150,6 +151,8 @@
     <Content Include="Content\svg-with-js.min.css" />
     <Content Include="Content\v4-shims.css" />
     <Content Include="Content\v4-shims.min.css" />
+    <Content Include="dhtmlx\data\wbs-data-sample-one.json" />
+    <Content Include="dhtmlx\data\data-one.json" />
     <None Include="dhtmlx\data\wbs-data.json" />
     <Content Include="dhtmlx\dhtmlxgantt.css" />
     <Content Include="dhtmlx\dhtmlxgantt.js" />
@@ -506,6 +509,7 @@
     <Content Include="imgs\ic_file_24.png" />
     <Content Include="imgs\ic_fullscreen_24.png" />
     <Content Include="imgs\ic_redo_24.png" />
+    <Content Include="imgs\ic_timeline_24.png" />
     <Content Include="imgs\ic_undo_24.png" />
     <Content Include="imgs\ic_zoom_in.png" />
     <Content Include="imgs\ic_zoom_out.png" />
@@ -583,6 +587,7 @@
     <Content Include="webfonts\fa-brands-400.eot" />
     <Content Include="Views\Home\CriticalPath.cshtml" />
     <Content Include="Views\Shared\_Layout_Critical_Path.cshtml" />
+    <Content Include="Views\Home\SampleOne.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

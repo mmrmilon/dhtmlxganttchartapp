@@ -131,6 +131,9 @@ ganttModules.menu = (function(){
 			}
 			gantt.render();
 		},
+		toggleTimeline: function () {
+			// need to work
+		},
 		toPDF: function(){
 			gantt.exportToPDF();
 		},

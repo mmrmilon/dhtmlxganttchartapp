@@ -1,6 +1,11 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<style type="text/css">
+    .gantt_cell {
+        display: inherit !important;
+    }
+</style>
 <div class="row">
     <div class="col-md-12">
         <div class="dhx-container">
@@ -11,12 +16,13 @@
                             <div class="demo-main-container">
                                 <div class="header gantt-demo-header">
                                     <ul class="gantt-controls">
-                                        <li class="gantt-menu-item"><a data-action="collapseAll"><img src="~/imgs/ic_collapse_all_24.png"/>Collapse All</a></li>
+                                        <li class="gantt-menu-item"><a data-action="collapseAll"><img src="~/imgs/ic_collapse_all_24.png" />Collapse All</a></li>
                                         <li class="gantt-menu-item gantt-menu-item-last"><a data-action="expandAll"><img src="~/imgs/ic_expand_all_24.png">Expand All</a></li>
                                         <li class="gantt-menu-item"><a data-action="undo"><img src="~/imgs/ic_undo_24.png">Undo</a></li>
                                         <li class="gantt-menu-item gantt-menu-item-last"><a data-action="redo"><img src="~/imgs/ic_redo_24.png">Redo</a></li>
                                         <li class="gantt-menu-item"><a data-action="toggleAutoScheduling"><img src="~/imgs/ic_auto_scheduling_24.png">Auto Scheduling</a></li>
                                         <li class="gantt-menu-item"><a data-action="toggleCriticalPath"><img src="~/imgs/ic_critical_path_24.png">Critical Path</a></li>
+                                        <li class="gantt-menu-item"><a data-action="toggleTimeline"><img src="~/imgs/ic_timeline_24.png">Timeline</a></li>
                                         <li class="gantt-menu-item gantt-menu-item-right"><a data-action="fullscreen"><img src="~/imgs/ic_fullscreen_24.png">Fullscreen</a></li>
                                         <li class="gantt-menu-item gantt-menu-item-right gantt-menu-item-last"><a data-action="zoomToFit"><img src="~/imgs/ic_zoom_to_fit_24.png">Zoom to Fit</a></li>
                                         <li class="gantt-menu-item gantt-menu-item-right"><a data-action="zoomOut"><img src="~/imgs/ic_zoom_out.png">Zoom Out</a></li>
@@ -49,3 +55,163 @@
         </div>
     </div>
 </div>
+@section scripts {
+    <script src="~/dhtmlx/dhtmlxgantt.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_marker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_fullscreen.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_critical_path.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_auto_scheduling.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_tooltip.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/ext/dhtmlxgantt_undo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://export.dhtmlx.com/gantt/api.js" async="true" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="~/dhtmlx/nav_menu.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/layout.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/zoom.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/zoom_to_fit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/grid_struct.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/dhtmlx/fit_task_text.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="~/GanttChart/codebase/dhtmlxgantt.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <link rel="stylesheet" href="~/GanttChart/style.css" type="text/css" charset="utf-8" />
+    @*<link rel="stylesheet" href="demo/lib/dhtmlxGantt/dhtmlxgantt.css" type="text/css" media="screen" title="no title" charset="utf-8">*@
+    @*<link rel="stylesheet" href="demo/styles/style.css?ver=1" type="text/css" charset="utf-8">*@
+
+    <script type="text/javascript">
+        var date_to_str = gantt.date.date_to_str(gantt.config.task_date);
+        var today = new Date(2021, 3, 5);
+        gantt.addMarker({
+            start_date: today,
+            css: "today",
+            text: "Today",
+            title: "Today: " + date_to_str(today)
+        });
+
+        var start = new Date(2021, 1, 1);
+        gantt.addMarker({
+            start_date: start,
+            css: "status_line",
+            text: "Start project",
+            title: "Start project: " + date_to_str(start)
+        });
+
+        gantt.attachEvent("onTaskCreated", function (item) {
+            if (item.duration == 1) {
+                item.duration = 72;
+            }
+            return true;
+        });
+
+        gantt.ext.fullscreen.getFullscreenElement = function () {
+            return document.querySelector(".demo-main-container");
+        };
+
+        var formatter = gantt.ext.formatters.durationFormatter({
+            enter: "day",
+            store: "hour",
+            format: "day",
+            hoursPerDay: 24,
+            hoursPerWeek: 40,
+            daysPerMonth: 30,
+            short: true
+        });
+        var linksFormatter = gantt.ext.formatters.linkFormatter({ durationFormatter: formatter });
+
+        ganttModules.layout.init(gantt, formatter, linksFormatter);
+
+        gantt.config.lightbox.sections = [
+            { name: "description", height: 70, map_to: "text", type: "textarea", focus: true },
+            {
+                name: "type", type: "typeselect", map_to: "type", filter: function (name, value) {
+                    return !!(value != gantt.config.types.project);
+                }
+            },
+            { name: "time", type: "duration", map_to: "auto", formatter: formatter }
+        ];
+        gantt.config.lightbox.project_sections = [
+            { name: "description", height: 70, map_to: "text", type: "textarea", focus: true },
+
+            { name: "time", type: "duration", readonly: true, map_to: "auto", formatter: formatter }
+        ];
+        gantt.config.lightbox.milestone_sections = [
+            { name: "description", height: 70, map_to: "text", type: "textarea", focus: true },
+            {
+                name: "type", type: "typeselect", map_to: "type", filter: function (name, value) {
+                    return !!(value != gantt.config.types.project);
+                }
+            },
+            { name: "time", type: "duration", single_date: true, map_to: "auto", formatter: formatter }
+        ];
+
+        //Make resize marker for two columns
+        gantt.attachEvent("onColumnResizeStart", function (ind, column) {
+            if (!column.tree || ind == 0) return;
+
+            setTimeout(function () {
+                var marker = document.querySelector(".gantt_grid_resize_area");
+                if (!marker) return;
+                var cols = gantt.getGridColumns();
+                var delta = cols[ind - 1].width || 0;
+                if (!delta) return;
+
+                marker.style.boxSizing = "content-box";
+                marker.style.marginLeft = -delta + "px";
+                marker.style.paddingRight = delta + "px";
+            }, 1);
+        });
+
+        gantt.attachEvent("onCollapse", function () {
+            var el = document.querySelector(".dhx-navigation");
+            el.removeAttribute("style");
+
+            var chatapp = document.getElementById("chat-application");
+            chatapp.style.visibility = "visible";
+        });
+
+        gantt.attachEvent("onExpand", function () {
+            var el = document.querySelector(".dhx-navigation");
+            el.style.position = "static";
+
+            var chatapp = document.getElementById("chat-application");
+            chatapp.style.visibility = "hidden";
+        });
+
+        gantt.templates.tooltip_text = function (start, end, task) {
+            var links = task.$target;
+            var labels = [];
+            for (var i = 0; i < links.length; i++) {
+                var link = gantt.getLink(links[i]);
+                labels.push(linksFormatter.format(link));
+            }
+            var predecessors = labels.join(", ");
+
+            var html = "<b>Task:</b> " + task.text + "<br/><b>Start:</b> " +
+                gantt.templates.tooltip_date_format(start) +
+                "<br/><b>End:</b> " + gantt.templates.tooltip_date_format(end) +
+                "<br><b>Duration:</b> " + formatter.format(task.duration);
+            if (predecessors) {
+                html += "<br><b>Predecessors:</b>" + predecessors;
+            }
+            return html;
+        };
+
+        gantt.config.auto_types = true;
+        gantt.config.xml_date = "%Y-%m-%d %H:%i:%s";
+        gantt.config.duration_unit = "hour";
+
+        gantt.config.row_height = 35;
+        gantt.config.order_branch = "marker";
+        gantt.config.order_branch_free = true;
+        gantt.config.grid_resize = true;
+
+        gantt.config.open_tree_initially = true;
+        gantt.config.auto_scheduling_strict = true;
+        gantt.config.highlight_critical_path = true;
+        ganttModules.zoom.setZoom("months");
+        //ganttModules.zoom.setZoom("hours");
+        gantt.init("gantt_here");
+        ganttModules.menu.setup();
+        //gantt.load("dhtmlx/data/data-one.json");
+        gantt.load("dhtmlx/data/data.json");
+    </script>
+}

@@ -35,7 +35,7 @@ ganttModules.layout = {
 			short: true
 		});
 		var textEditor = {type: "text", map_to: "text"};
-		var dateEditor = {type: "date", map_to: "start_date", min: new Date(2018, 0, 1), max: new Date(2019, 0, 1)};
+		var dateEditor = {type: "date", map_to: "start_date", min: new Date(2021, 0, 1), max: new Date(2021, 5, 30)};
 		var durationEditor = {type: "duration", map_to: "duration", formatter: durationFormatter, min:0, max:10000};
 		var hourDurationEditor = {type: "duration", map_to: "duration", formatter: hourFormatter, min:0, max:10000};
 		var predecessorEditor = {type: "predecessor", map_to: "auto", formatter: linksFormatter};

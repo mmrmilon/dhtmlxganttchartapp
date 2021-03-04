@@ -1,0 +1,1821 @@
+﻿{
+  "data": [
+    {
+      "id": "PCP21322083-M327",
+      "did": 781,
+      "text": "PCP M 101",
+      "start_date": "01-02-2021 09:00",
+      "end_date": "03-02-2021 17:00",
+      "due_date": "03-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 250,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": null,
+      "type": "cmilestone",
+      "open": false,
+      "assigned_to": "",
+      "assigned_by": "",
+      "estimated_hours": "250h",
+      "completed_hours": null,
+      "duration_date": "01-Feb-2021 - 03-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "03-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#a3e1e2",
+      "textColor": null,
+      "custom_type": "cmilestone",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-M327",
+      "task_description": "PCP M 101",
+      "editable": false,
+      "task_status_text": null,
+      "is_milestone": true,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3339",
+      "did": 4500,
+      "text": "A",
+      "start_date": "01-02-2021 09:00",
+      "end_date": "01-02-2021 15:00",
+      "due_date": "01-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 6,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "6h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 01-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "01-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3339",
+      "task_description": "A",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3340",
+      "did": 4501,
+      "text": "B",
+      "start_date": "01-02-2021 09:00",
+      "end_date": "01-02-2021 12:00",
+      "due_date": "01-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 3,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "3h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 01-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "01-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3340",
+      "task_description": "B",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3341",
+      "did": 4502,
+      "text": "C",
+      "start_date": "01-02-2021 13:00",
+      "end_date": "01-02-2021 19:00",
+      "due_date": "02-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 6,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "6h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3341",
+      "task_description": "C",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3342",
+      "did": 4503,
+      "text": "D",
+      "start_date": "01-02-2021 10:00",
+      "end_date": "01-02-2021 13:00",
+      "due_date": "02-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 3,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "3h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3342",
+      "task_description": "D",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3343",
+      "did": 4504,
+      "text": "E",
+      "start_date": "01-02-2021 14:00",
+      "end_date": "01-02-2021 17:00",
+      "due_date": "02-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 3,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "3h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3343",
+      "task_description": "E",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3344",
+      "did": 4505,
+      "text": "F",
+      "start_date": "01-02-2021 10:00",
+      "end_date": "01-02-2021 12:00",
+      "due_date": "01-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 2,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "2h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 01-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "01-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3344",
+      "task_description": "F",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3345",
+      "did": 4506,
+      "text": "G",
+      "start_date": "01-02-2021 14:00",
+      "end_date": "01-02-2021 17:00",
+      "due_date": "02-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 3,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "3h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3345",
+      "task_description": "G",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3346",
+      "did": 4507,
+      "text": "H",
+      "start_date": "01-02-2021 16:00",
+      "end_date": "01-02-2021 18:00",
+      "due_date": "02-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 2,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "2h 0m",
+      "completed_hours": "0%",
+      "duration_date": "01-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "01-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 0,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 0,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3346",
+      "task_description": "H",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3347",
+      "did": 4508,
+      "text": "Backlog 113",
+      "start_date": "02-02-2021 12:00",
+      "end_date": "02-02-2021 15:00",
+      "due_date": "02-02-2021 16:00",
+      "duration": null,
+      "duration_hours": 4,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "Shafiul Bashar",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "4h 0m",
+      "completed_hours": "0%",
+      "duration_date": "02-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "02-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 2,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 33980,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3347",
+      "task_description": "<p>This is another test backlog 113</p>",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    },
+    {
+      "id": "PCP21322083-T3348",
+      "did": 4509,
+      "text": "Test Bug 101",
+      "start_date": "02-02-2021 12:00",
+      "end_date": "02-02-2021 17:00",
+      "due_date": "02-02-2021 17:00",
+      "duration": null,
+      "duration_hours": 5,
+      "duration_mins": 0,
+      "progress": 0,
+      "parent": "PCP21322083-M327",
+      "type": "task",
+      "open": true,
+      "assigned_to": "Shafiul Bashar",
+      "assigned_by": "PMaspire Singapore",
+      "estimated_hours": "0h 0m",
+      "completed_hours": "0%",
+      "duration_date": "02-Feb-2021 - 02-Feb-2021",
+      "start_date_display": "02-Feb-2021",
+      "due_date_display": "02-Feb-2021",
+      "task_status": 0,
+      "task_priority": 2,
+      "color": "#ffc572",
+      "textColor": "white",
+      "custom_type": "task",
+      "user_id": 33980,
+      "project_id": 360,
+      "milestone_id": 781,
+      "parent_task_id": null,
+      "code": "PCP21322083-T3348",
+      "task_description": "<p>This is a test bug 101</p>",
+      "editable": false,
+      "task_status_text": "Open",
+      "is_milestone": false,
+      "material_type_id": 0,
+      "material_type_unit": 0,
+      "machines_type_id": 0,
+      "machines_type_unit": 0,
+      "miscellaneous_type_id": 0,
+      "miscellaneous_type_unit": 0,
+      "fixed_cost": 0,
+      "total_cost": 0
+    }
+  ],
+  "links": [
+    {
+      "id": "196",
+      "type": "0",
+      "source": "PCP21322083-T3339",
+      "target": "PCP21322083-T3341",
+      "project_task_id": 4502,
+      "dependent_task_id": 4500
+    },
+    {
+      "id": "197",
+      "type": "0",
+      "source": "PCP21322083-T3340",
+      "target": "PCP21322083-T3342",
+      "project_task_id": 4503,
+      "dependent_task_id": 4501
+    },
+    {
+      "id": "198",
+      "type": "0",
+      "source": "PCP21322083-T3342",
+      "target": "PCP21322083-T3343",
+      "project_task_id": 4504,
+      "dependent_task_id": 4503
+    },
+    {
+      "id": "199",
+      "type": "0",
+      "source": "PCP21322083-T3344",
+      "target": "PCP21322083-T3343",
+      "project_task_id": 4504,
+      "dependent_task_id": 4505
+    },
+    {
+      "id": "200",
+      "type": "0",
+      "source": "PCP21322083-T3340",
+      "target": "PCP21322083-T3344",
+      "project_task_id": 4505,
+      "dependent_task_id": 4501
+    },
+    {
+      "id": "201",
+      "type": "0",
+      "source": "PCP21322083-T3341",
+      "target": "PCP21322083-T3345",
+      "project_task_id": 4506,
+      "dependent_task_id": 4502
+    },
+    {
+      "id": "202",
+      "type": "0",
+      "source": "PCP21322083-T3343",
+      "target": "PCP21322083-T3346",
+      "project_task_id": 4507,
+      "dependent_task_id": 4504
+    },
+    {
+      "id": "203",
+      "type": "0",
+      "source": "PCP21322083-T3345",
+      "target": "PCP21322083-T3346",
+      "project_task_id": 4507,
+      "dependent_task_id": 4506
+    }
+  ],
+  "users": [
+    {
+      "id": 22691,
+      "text": "PMaspire Singapore",
+      "email": "abdullapmp@gmail.com",
+      "phone": "657865434322",
+      "rate": "100 ",
+      "position": null,
+      "department": null,
+      "type": "resource"
+    },
+    {
+      "id": 23121,
+      "text": "Abdulla PMP",
+      "email": "abdulla.intellect@yahoo.com",
+      "phone": "+65789009877",
+      "rate": "200 ",
+      "position": "CEO",
+      "department": "Corporate",
+      "type": "resource"
+    },
+    {
+      "id": 28863,
+      "text": "Michael Crawley",
+      "email": "A360@gmail.com",
+      "phone": "+224362",
+      "rate": "100 ",
+      "position": "Founder & CEO, ASL 360 INC",
+      "department": "Corporate",
+      "type": "resource"
+    },
+    {
+      "id": 28864,
+      "text": "Mike Abby",
+      "email": "sg.pmaspire@gmail.com",
+      "phone": "+12348788999",
+      "rate": "100 ",
+      "position": "PMO Consultant",
+      "department": "PMO",
+      "type": "resource"
+    },
+    {
+      "id": 29424,
+      "text": "Mario Santos",
+      "email": "mario@konsutera.com",
+      "phone": "+16654359",
+      "rate": "10000 ",
+      "position": "CEO",
+      "department": "Corporate",
+      "type": "resource"
+    },
+    {
+      "id": 29859,
+      "text": "Tom Frank",
+      "email": "tomf@pmaspire.com",
+      "phone": "65776654343",
+      "rate": "100 ",
+      "position": "Manager",
+      "department": "Software",
+      "type": "resource"
+    },
+    {
+      "id": 33483,
+      "text": "Ammar  Kahia",
+      "email": "info@trainingflex.ca",
+      "phone": "+14389226015",
+      "rate": "200 ",
+      "position": "CEO",
+      "department": "Founder",
+      "type": "resource"
+    },
+    {
+      "id": 33484,
+      "text": "Sarah Stefani",
+      "email": "sarah.stafeni@gmail.com",
+      "phone": "6510302",
+      "rate": "500 ",
+      "position": "Manager",
+      "department": "Simulator Division",
+      "type": "resource"
+    },
+    {
+      "id": 33485,
+      "text": "Mark Mcguire",
+      "email": "mark.pmaspire@gmail.com",
+      "phone": "6521111",
+      "rate": "1000 ",
+      "position": "Manager",
+      "department": "Partner Division",
+      "type": "resource"
+    },
+    {
+      "id": 33486,
+      "text": "Ali Sina",
+      "email": "ali.pmaspire@gmail.com",
+      "phone": "20204040",
+      "rate": "1000 ",
+      "position": "Senior Manager",
+      "department": "LMS",
+      "type": "resource"
+    },
+    {
+      "id": 33487,
+      "text": "Jay SGE",
+      "email": "jay.pmaspire@gmail.com",
+      "phone": "+12353566",
+      "rate": "300 ",
+      "position": "Asst. Manager",
+      "department": "Partner",
+      "type": "resource"
+    },
+    {
+      "id": 33680,
+      "text": "Wassim  BOUAZIZ",
+      "email": "wbouaziz.PMO@maven-side.com",
+      "phone": "+664435678",
+      "rate": "1000 ",
+      "position": "President",
+      "department": "Admin",
+      "type": "resource"
+    },
+    {
+      "id": 33684,
+      "text": "Maurice DIOP",
+      "email": "maurice.diop1@gmail.com",
+      "phone": "+9865445678",
+      "rate": "1000 ",
+      "position": "President",
+      "department": "ADMIN",
+      "type": "resource"
+    },
+    {
+      "id": 33980,
+      "text": "Shafiul Bashar",
+      "email": "shafiul.pmaspire@gmail.com",
+      "phone": "01711700790",
+      "rate": "1000 ",
+      "position": "Assistant Manager",
+      "department": "Sales",
+      "type": "resource"
+    },
+    {
+      "id": 33982,
+      "text": "Abdul Awal",
+      "email": "awal.pmaspire@gmail.com",
+      "phone": "+8801304355183",
+      "rate": "1000 ",
+      "position": "Senior Vice President",
+      "department": "RegTech, PMO & Large Project",
+      "type": "resource"
+    },
+    {
+      "id": 35713,
+      "text": "Ibrahim Redwan",
+      "email": "redwan.pmaspire@gmail.com",
+      "phone": "+880130435518309",
+      "rate": "500 ",
+      "position": "Manager",
+      "department": "PMO",
+      "type": "resource"
+    }
+  ],
+  "projecttasks": [
+    {
+      "id": 4500,
+      "text": "A",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4501,
+      "text": "B",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4502,
+      "text": "C",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4503,
+      "text": "D",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4504,
+      "text": "E",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4505,
+      "text": "F",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4506,
+      "text": "G",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4507,
+      "text": "H",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4508,
+      "text": "Backlog 113",
+      "type": "dependanttask"
+    },
+    {
+      "id": 4509,
+      "text": "Test Bug 101",
+      "type": "dependanttask"
+    }
+  ],
+  "materialtypes": [
+    {
+      "id": 28,
+      "text": "Brick Flat Soling",
+      "type": "Materials"
+    },
+    {
+      "id": 29,
+      "text": "Cement Concrete (1:3:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 30,
+      "text": "Cement Concrete (1:2:4)",
+      "type": "Materials"
+    },
+    {
+      "id": 31,
+      "text": "Polythene Work",
+      "type": "Materials"
+    },
+    {
+      "id": 32,
+      "text": "250mm Brick Wall (1:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 33,
+      "text": "125mm Brick Wall (1:4)",
+      "type": "Materials"
+    },
+    {
+      "id": 34,
+      "text": "250mm Brick Wall (1:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 35,
+      "text": "250 Brick Wall (1:6) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 36,
+      "text": "250 Brick Wall (1:6) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 37,
+      "text": "250 Brick Wall (1:6) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 38,
+      "text": "250 Brick Wall (1:6) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 39,
+      "text": "250mm Pointing Brick Wall (1:6) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 40,
+      "text": "250mm Pointing Brick Wall (1:6) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 41,
+      "text": "250mm Pointing Brick Wall (1:6) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 42,
+      "text": "250mm Pointing Brick Wall (1:6) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 43,
+      "text": "250mm Pointing Brick Wall (1:6) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 44,
+      "text": "125mm Brick Wall (1:4) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 45,
+      "text": "125mm Brick Wall (1:4) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 46,
+      "text": "125mm Brick Wall (1:4) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 47,
+      "text": "125mm Brick Wall (1:4) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 48,
+      "text": "125mm Brick Wall (1:4) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 49,
+      "text": "RCC Work (1:1.25:2.50)",
+      "type": "Materials"
+    },
+    {
+      "id": 50,
+      "text": "RCC Column Work (1:1.25:2.50) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 51,
+      "text": "Formwork (Steel) BF~1F",
+      "type": "Materials"
+    },
+    {
+      "id": 52,
+      "text": "Formwork (Steel) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 53,
+      "text": "Formwork (Steel) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 54,
+      "text": "Formwork (Steel) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 55,
+      "text": "Formwork (Wooden) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 56,
+      "text": "Formwork (Wooden) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 57,
+      "text": "Formwork (Wooden) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 58,
+      "text": "Formwork (Wooden) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 59,
+      "text": "Deformed Bar Reinforcement BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 61,
+      "text": "Deformed Bar Reinforcement 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 62,
+      "text": "Deformed Bar Reinforcement Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 63,
+      "text": "Chemical Admixture",
+      "type": "Materials"
+    },
+    {
+      "id": 66,
+      "text": "250mm Pointing Brick Wall (1:6) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 67,
+      "text": "250mm Brick Wall (1:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 73,
+      "text": "Formwork (Wooden) BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 74,
+      "text": "Formwork (Steel) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 75,
+      "text": "RCC Column Work (1:1.25:2.50) BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 76,
+      "text": "RCC Column Work (1:1.25:2.50) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 78,
+      "text": "RCC Column Work (1:1.25:2.50) 3F~Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 80,
+      "text": "RCC Column Work (1:1.5:3.0) Beam~Slab",
+      "type": "Materials"
+    },
+    {
+      "id": 81,
+      "text": "Deformed Bar Reinforcement 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 82,
+      "text": "Deformed Bar Reinforcement 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 83,
+      "text": "Deformed Bar Reinforcement 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 120,
+      "text": "12mm Plastering Work",
+      "type": "Materials"
+    },
+    {
+      "id": 121,
+      "text": "12mm Plastering Work (1:$) with NCF+WP",
+      "type": "Materials"
+    },
+    {
+      "id": 122,
+      "text": "12mm Plastering Work (1:$) with NCF",
+      "type": "Materials"
+    },
+    {
+      "id": 123,
+      "text": "Rule Pointing Work GF",
+      "type": "Materials"
+    },
+    {
+      "id": 124,
+      "text": "Rule Pointing Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 125,
+      "text": "Rule Pointing Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 126,
+      "text": "Rule Pointing Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 127,
+      "text": "Rule Pointing Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 128,
+      "text": "Surface Water Repellent Application GF",
+      "type": "Materials"
+    },
+    {
+      "id": 129,
+      "text": "Surface Water Repellent Application 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 130,
+      "text": "Surface Water Repellent Application 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 131,
+      "text": "Surface Water Repellent Application 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 132,
+      "text": "Surface Water Repellent Application 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 133,
+      "text": "PU Floor Concrete Work 4mm Thickness",
+      "type": "Materials"
+    },
+    {
+      "id": 134,
+      "text": "PU Floor Concrete Work 3mm Thickness",
+      "type": "Materials"
+    },
+    {
+      "id": 135,
+      "text": "Floor Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 136,
+      "text": "Floor Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 137,
+      "text": "Floor Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 138,
+      "text": "Wall Tiling Work BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 139,
+      "text": "Wall Tiling Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 140,
+      "text": "Wall Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 141,
+      "text": "Wall Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 142,
+      "text": "Wall Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 143,
+      "text": "Stair Tiling Work BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 144,
+      "text": "Stair Tiling Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 145,
+      "text": "Stair Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 146,
+      "text": "Stair Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 147,
+      "text": "Stair Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 148,
+      "text": "Thai Aluminum Work",
+      "type": "Materials"
+    },
+    {
+      "id": 149,
+      "text": "Window Grill Work",
+      "type": "Materials"
+    },
+    {
+      "id": 150,
+      "text": "Painting Work (Interior)",
+      "type": "Materials"
+    },
+    {
+      "id": 151,
+      "text": "Painting Work (Exterior)",
+      "type": "Materials"
+    },
+    {
+      "id": 152,
+      "text": "SS Railing Work",
+      "type": "Materials"
+    },
+    {
+      "id": 153,
+      "text": "Brick Flat Soling",
+      "type": "Materials"
+    },
+    {
+      "id": 154,
+      "text": "Cement Concrete (1:3:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 155,
+      "text": "Brick Flat Soling",
+      "type": "Materials"
+    },
+    {
+      "id": 156,
+      "text": "Cement Concrete (1:3:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 157,
+      "text": "250mm Brick Wall (1:6)",
+      "type": "Materials"
+    },
+    {
+      "id": 158,
+      "text": "Cement Concrete (1:2:4)",
+      "type": "Materials"
+    },
+    {
+      "id": 159,
+      "text": "Polythene Work",
+      "type": "Materials"
+    },
+    {
+      "id": 160,
+      "text": "125mm Brick Wall (1:4)",
+      "type": "Materials"
+    },
+    {
+      "id": 161,
+      "text": "125mm Brick Wall (1:4) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 162,
+      "text": "125mm Brick Wall (1:4) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 163,
+      "text": "125mm Brick Wall (1:4) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 164,
+      "text": "125mm Brick Wall (1:4) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 165,
+      "text": "125mm Brick Wall (1:4) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 166,
+      "text": "Formwork (Steel) BF~1F",
+      "type": "Materials"
+    },
+    {
+      "id": 167,
+      "text": "Formwork (Steel) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 168,
+      "text": "Formwork (Steel) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 169,
+      "text": "Formwork (Steel) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 170,
+      "text": "Formwork (Wooden) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 171,
+      "text": "Formwork (Wooden) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 172,
+      "text": "Formwork (Wooden) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 173,
+      "text": "Formwork (Wooden) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 174,
+      "text": "Deformed Bar Reinforcement BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 175,
+      "text": "Deformed Bar Reinforcement 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 176,
+      "text": "Deformed Bar Reinforcement Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 177,
+      "text": "Chemical Admixture",
+      "type": "Materials"
+    },
+    {
+      "id": 178,
+      "text": "250mm Pointing Brick Wall (1:6) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 179,
+      "text": "Formwork (Wooden) BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 180,
+      "text": "Formwork (Steel) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 181,
+      "text": "Deformed Bar Reinforcement 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 182,
+      "text": "Deformed Bar Reinforcement 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 183,
+      "text": "Deformed Bar Reinforcement 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 184,
+      "text": "12mm Plastering Work",
+      "type": "Materials"
+    },
+    {
+      "id": 185,
+      "text": "12mm Plastering Work (1:$) with NCF+WP",
+      "type": "Materials"
+    },
+    {
+      "id": 186,
+      "text": "12mm Plastering Work (1:$) with NCF",
+      "type": "Materials"
+    },
+    {
+      "id": 187,
+      "text": "Rule Pointing Work GF",
+      "type": "Materials"
+    },
+    {
+      "id": 188,
+      "text": "Rule Pointing Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 189,
+      "text": "Rule Pointing Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 190,
+      "text": "Rule Pointing Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 191,
+      "text": "Rule Pointing Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 192,
+      "text": "Surface Water Repellent Application GF",
+      "type": "Materials"
+    },
+    {
+      "id": 193,
+      "text": "Surface Water Repellent Application 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 194,
+      "text": "Surface Water Repellent Application 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 195,
+      "text": "Surface Water Repellent Application 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 196,
+      "text": "Surface Water Repellent Application 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 197,
+      "text": "Floor Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 198,
+      "text": "Floor Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 199,
+      "text": "Floor Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 200,
+      "text": "Wall Tiling Work BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 201,
+      "text": "Wall Tiling Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 202,
+      "text": "Wall Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 203,
+      "text": "Wall Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 204,
+      "text": "Wall Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 205,
+      "text": "Stair Tiling Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 206,
+      "text": "Stair Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 207,
+      "text": "Stair Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 208,
+      "text": "Stair Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 209,
+      "text": "SS Railing Work",
+      "type": "Materials"
+    },
+    {
+      "id": 210,
+      "text": "Painting Work (Interior)",
+      "type": "Materials"
+    },
+    {
+      "id": 211,
+      "text": "Painting Work (Exterior)",
+      "type": "Materials"
+    },
+    {
+      "id": 212,
+      "text": "Window Grill Work",
+      "type": "Materials"
+    },
+    {
+      "id": 213,
+      "text": "Thai Aluminum Work",
+      "type": "Materials"
+    },
+    {
+      "id": 214,
+      "text": "Brick Flat Soling",
+      "type": "Materials"
+    },
+    {
+      "id": 215,
+      "text": "Polythene Work",
+      "type": "Materials"
+    },
+    {
+      "id": 216,
+      "text": "125mm Brick Wall (1:4)",
+      "type": "Materials"
+    },
+    {
+      "id": 217,
+      "text": "125mm Brick Wall (1:4) 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 218,
+      "text": "125mm Brick Wall (1:4) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 219,
+      "text": "125mm Brick Wall (1:4) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 220,
+      "text": "125mm Brick Wall (1:4) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 221,
+      "text": "125mm Brick Wall (1:4) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 222,
+      "text": "Formwork (Steel) BF~1F",
+      "type": "Materials"
+    },
+    {
+      "id": 223,
+      "text": "Formwork (Steel) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 224,
+      "text": "Formwork (Steel) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 225,
+      "text": "Formwork (Steel) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 226,
+      "text": "Formwork (Wooden) 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 227,
+      "text": "Formwork (Wooden) 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 228,
+      "text": "Formwork (Wooden) 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 229,
+      "text": "Deformed Bar Reinforcement BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 230,
+      "text": "Deformed Bar Reinforcement 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 231,
+      "text": "Deformed Bar Reinforcement Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 232,
+      "text": "Chemical Admixture",
+      "type": "Materials"
+    },
+    {
+      "id": 233,
+      "text": "Formwork (Wooden) BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 234,
+      "text": "Formwork (Steel) Roof",
+      "type": "Materials"
+    },
+    {
+      "id": 235,
+      "text": "Deformed Bar Reinforcement 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 236,
+      "text": "Deformed Bar Reinforcement 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 237,
+      "text": "Deformed Bar Reinforcement 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 238,
+      "text": "12mm Plastering Work",
+      "type": "Materials"
+    },
+    {
+      "id": 239,
+      "text": "12mm Plastering Work (1:$) with NCF+WP",
+      "type": "Materials"
+    },
+    {
+      "id": 240,
+      "text": "12mm Plastering Work (1:$) with NCF",
+      "type": "Materials"
+    },
+    {
+      "id": 241,
+      "text": "Rule Pointing Work GF",
+      "type": "Materials"
+    },
+    {
+      "id": 242,
+      "text": "Rule Pointing Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 243,
+      "text": "Rule Pointing Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 244,
+      "text": "Rule Pointing Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 245,
+      "text": "Rule Pointing Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 246,
+      "text": "Surface Water Repellent Application GF",
+      "type": "Materials"
+    },
+    {
+      "id": 247,
+      "text": "Surface Water Repellent Application 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 248,
+      "text": "Surface Water Repellent Application 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 249,
+      "text": "Surface Water Repellent Application 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 250,
+      "text": "Wall Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 251,
+      "text": "Wall Tiling Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 252,
+      "text": "Wall Tiling Work BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 253,
+      "text": "Floor Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 254,
+      "text": "Wall Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 255,
+      "text": "Floor Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 256,
+      "text": "Stair Tiling Work 1F",
+      "type": "Materials"
+    },
+    {
+      "id": 257,
+      "text": "Stair Tiling Work 3F",
+      "type": "Materials"
+    },
+    {
+      "id": 258,
+      "text": "Stair Tiling Work 2F",
+      "type": "Materials"
+    },
+    {
+      "id": 259,
+      "text": "Stair Tiling Work BF+GF",
+      "type": "Materials"
+    },
+    {
+      "id": 260,
+      "text": "Stair Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 261,
+      "text": "Wall Tiling Work 4F",
+      "type": "Materials"
+    },
+    {
+      "id": 262,
+      "text": "Thai Aluminum Work",
+      "type": "Materials"
+    },
+    {
+      "id": 263,
+      "text": "Window Grill Work",
+      "type": "Materials"
+    },
+    {
+      "id": 264,
+      "text": "SS Railing Work",
+      "type": "Materials"
+    },
+    {
+      "id": 265,
+      "text": "Painting Work (Exterior)",
+      "type": "Materials"
+    },
+    {
+      "id": 266,
+      "text": "Painting Work (Interior)",
+      "type": "Materials"
+    }
+  ],
+  "machinestypes": [
+    {
+      "id": 1,
+      "text": "Cement",
+      "type": "Machines"
+    },
+    {
+      "id": 5,
+      "text": "Backhoe",
+      "type": "Machines"
+    },
+    {
+      "id": 10,
+      "text": "Backhoe 101",
+      "type": "Machines"
+    },
+    {
+      "id": 11,
+      "text": "Backhoe 102",
+      "type": "Machines"
+    },
+    {
+      "id": 15,
+      "text": "Crane",
+      "type": "Machines"
+    },
+    {
+      "id": 17,
+      "text": "Computer",
+      "type": "Machines"
+    },
+    {
+      "id": 18,
+      "text": "Laptop",
+      "type": "Machines"
+    },
+    {
+      "id": 19,
+      "text": "Projector",
+      "type": "Machines"
+    }
+  ],
+  "miscellaneousypes": [
+    {
+      "id": 7,
+      "text": "Rock ++",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 13,
+      "text": "Rock 102",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 22,
+      "text": "Mobilization",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 23,
+      "text": "Layout Marking",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 24,
+      "text": "Earth Excavation",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 25,
+      "text": "Earth Removing",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 26,
+      "text": "Earth Filling",
+      "type": "Miscellaneous"
+    },
+    {
+      "id": 27,
+      "text": "Sand Filling",
+      "type": "Miscellaneous"
+    }
+  ],
+  "currency": null,
+  "TemplateList": null
+}
